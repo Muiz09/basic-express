@@ -109,6 +109,26 @@
       "stock": 140,
       "brand": "Fair & Clear",
       "category": "skincare"
+    },
+    {
+      "title": "Mama kita",
+      "description": "Membersihkan noda membandal",
+      "price": "1",
+      "discountPercentage": "10.21",
+      "rating": "8.7",
+      "stock": "1",
+      "brand": "Locsal",
+      "category": "makan"
+    },
+    {
+      "title": "",
+      "description": "Membersihkan noda membandal",
+      "price": "1",
+      "discountPercentage": "10.21",
+      "rating": "8.7",
+      "stock": "1",
+      "brand": "Locsal",
+      "category": "makan"
     }
   ],
   "phonestore": [

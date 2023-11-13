@@ -65,7 +65,7 @@ app.post('/create/:type', (req, res) => {
 
     const { error } = scheme.validate(newData);
     if (error) {
-      res.status(400).json({ status: 'Validation Failed', message: error.details[0].message })
+      return res.status(400).json({ status: 'Validation Failed', message: error.details[0].message })
     }
 
     if (data[type].find((el) => el.title.toLowerCase() === newData.title.toLowerCase())) {
@@ -103,7 +103,7 @@ app.put('/all/:type/:title', (req, res) => {
 
     const { error } = scheme.validate(newData);
     if (error) {
-      res.status(400).json({ status: 'Validation Failed', message: error.details[0].message })
+      return res.status(400).json({ status: 'Validation Failed', message: error.details[0].message })
     }
 
     if (!data[type].find((el) => el.title.toLowerCase() === title.toLowerCase())) {
